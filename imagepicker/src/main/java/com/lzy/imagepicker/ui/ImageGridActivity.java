@@ -355,7 +355,7 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
 
                 ImageItem imageItem = new ImageItem();
                 imageItem.path = path;
-                imagePicker.clearSelectedImages();
+//                imagePicker.clearSelectedImages(); //LZD 如果不注释掉这里的话，选择了图片后再拍照会清除已经选择了的图片
                 imagePicker.addSelectedImageItem(0, imageItem, true);
                 if (imagePicker.isCrop()) {
                     Intent intent = new Intent(ImageGridActivity.this, ImageCropActivity.class);
